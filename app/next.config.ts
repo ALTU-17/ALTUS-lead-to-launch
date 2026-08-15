@@ -25,9 +25,11 @@ function nearestSpacelessRoot(dir: string): string {
   return current;
 }
 
-const nextConfig: NextConfig = {
-  turbopack: {
-    root: nearestSpacelessRoot(__dirname),
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
 };
 
