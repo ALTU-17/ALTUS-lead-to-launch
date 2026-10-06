@@ -31,6 +31,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  turbopack: {
+    root: nearestSpacelessRoot(__dirname),
+  },
 };
 
 export default nextConfig;
